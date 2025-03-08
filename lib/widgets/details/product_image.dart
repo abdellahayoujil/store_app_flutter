@@ -4,10 +4,10 @@ import '../../constants.dart';
 
 class ProductImage extends StatelessWidget {
   const ProductImage({
-    Key? key,
+    super.key,
     required this.size,
     required this.image,
-  }) : super(key: key);
+  });
 
   final Size size;
   final String image;
@@ -15,7 +15,7 @@ class ProductImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: kDefaultPadding),
+      margin: const EdgeInsets.symmetric(vertical: kDefaultPadding),
       height: size.width * 0.8,
       child: Stack(
         alignment: Alignment.bottomCenter,
@@ -23,7 +23,7 @@ class ProductImage extends StatelessWidget {
           Container(
             height: size.width * 0.7,
             width: size.width * 0.7,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle,
             ),

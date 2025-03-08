@@ -24,8 +24,8 @@ class DetailsScreen extends StatelessWidget {
       backgroundColor: kBackgroundColor,
       elevation: 0,
       leading: IconButton(
-        padding: EdgeInsets.only(right: kDefaultPadding),
-        icon: Icon(
+        padding: const EdgeInsets.only(right: kDefaultPadding),
+        icon: const Icon(
           Icons.arrow_back,
           color: kPrimaryColor,
         ),

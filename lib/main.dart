@@ -8,6 +8,7 @@ void main() {
   runApp(MyApp());
 }
 
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,14 +20,13 @@ class MyApp extends StatelessWidget {
           primaryColor: kPrimaryColor,
           colorScheme: ColorScheme.fromSwatch().copyWith(secondary: kPrimaryColor), 
         ),
-      // Arabic RTL
-      localizationsDelegates: [
+      localizationsDelegates: const [
         GlobalCupertinoLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      supportedLocales: [Locale("ar", "AE")],
-      locale: Locale("ar", "AE"),
+      supportedLocales: const [Locale("ar") , Locale("en")],
+      locale: const Locale("ar"),
 
       home: HomeScreen(),
     );
