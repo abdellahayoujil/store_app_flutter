@@ -1,10 +1,11 @@
 class Product {
-  final int? id, price;
+  final int? id;
+  double price;
   final String? title, subTitle, description, image;
 
   Product(
       {this.id,
-      this.price,
+      required this.price,
       this.title,
       this.subTitle,
       this.description,
