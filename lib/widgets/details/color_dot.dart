@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../constants.dart';
 
 class ColorDot extends StatelessWidget {
-  const ColorDot({
+   ColorDot({
     Key? key,
     required this.fillColor,
     this.isSelected = false,
@@ -15,8 +15,8 @@ class ColorDot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: kDefaultPadding / 2.5),
-      padding: EdgeInsets.all(3.0),
+      margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2.5),
+      padding: const EdgeInsets.all(3.0),
       height: 24,
       width: 24,
       decoration: BoxDecoration(

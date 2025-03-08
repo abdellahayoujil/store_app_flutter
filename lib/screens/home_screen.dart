@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:store/constants.dart';
 import 'package:store/widgets/home/home_body.dart';
 
+// ignore: use_key_in_widget_constructors
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,13 +18,13 @@ class HomeScreen extends StatelessWidget {
     return AppBar(
       elevation: 0,
       title: Text(
-        'مرحبا بكم بمتجر الالكترونيات',
+        'متجر الالكترونيات',
         style: GoogleFonts.getFont('Almarai'),
       ),
       centerTitle: false,
       actions: [
         IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {},
         ),
       ],
